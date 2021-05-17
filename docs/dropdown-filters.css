@@ -1,0 +1,94 @@
+:root {
+    --filter-fg: #000;
+    --filter-border-color: #999;
+    --filter-input-fg: #000;
+    --filter-input-bg: #fff;
+    --filter-button-bg: #fff;
+    --filter-button-selected-fg: #000;
+    --filter-button-selected-bg: #8df;
+    --filter-value-matches-border-color: #00f;
+    --filter-panel-bg: #f8f8f8;
+    --filter-panel-width: 12em;
+}
+
+.filter {
+    color: var(--filter-fg);
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.filter-search-input {
+    color: var(--filter-input-fg);
+    background: var(--filter-input-bg);
+    border: 1px solid var(--filter-border-color);
+    border-radius: 0.3em;
+    padding: 0.2em 0.5em;
+}
+
+.filter-panel-aligner {
+    display: inline;
+    position: relative;
+}
+
+.filter-panel-button {
+    color: var(--filter-fg);
+    background: var(--filter-button-bg);
+    border: 1px solid var(--filter-border-color);
+    border-radius: 0.3em;
+    padding: 0.2em 0.5em;
+    cursor: pointer;
+    margin-left: 0.3em;
+}
+
+.filter-panel {
+    background: var(--filter-panel-bg);
+    display: none;
+    border: 1px solid var(--filter-border-color);
+    border-radius: 0.2em;
+    padding: 0.4em;
+    position: absolute;
+    right: 0;
+    width: var(--filter-panel-width);
+    z-index: 1;
+}
+
+.filter-panel-visible {
+    display: block;
+}
+
+.filter-control, .filter-value {
+    color: var(--filter-fg);
+    background: var(--filter-button-bg);
+    border: 1px solid var(--filter-border-color);
+    border-radius: 0.3em;
+    padding: 0.2em 0.5em;
+    cursor: pointer;
+    margin: 0.1em;
+}
+
+.filter-control-container {
+    margin-bottom: 0.4em;
+    text-align: right;
+}
+
+.filter-value-container {
+    display: grid;
+}
+
+.filter-value {
+    opacity: 35%;
+}
+
+.filter-value-active {
+    opacity: 100%;
+}
+
+.filter-value-matches {
+    outline: 2px solid var(--filter-value-matches-border-color);
+}
+
+.filter-button-selected {
+    color: var(--filter-button-selected-fg);
+    background: var(--filter-button-selected-bg);
+}

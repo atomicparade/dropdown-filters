@@ -1,0 +1,61 @@
+body {
+    background: #181818;
+    color: #eee;
+}
+
+:root {
+    --filter-fg: #eee;
+    --filter-border-color: #555;
+    --filter-input-fg: #eee;
+    --filter-input-bg: #333;
+    --filter-button-bg: #333;
+    --filter-button-selected-fg: #000;
+    --filter-button-selected-bg: #c80;
+    --filter-value-matches-border-color: #48d;
+    --filter-panel-bg: #222;
+    --filter-panel-width: 12em;
+}
+
+.theme-switcher-button {
+    color: #eee;
+    background: #333;
+    border-color: #555;
+}
+
+.keyboard-button {
+    border-color: #555;
+    background: #333;
+}
+
+#content span {
+    color: #000;
+    border-color: #555;
+}
+
+.color-red {
+    background: #c56;
+}
+
+.color-orange {
+    background: #c83;
+}
+
+.color-yellow {
+    background: #bb2;
+}
+
+.color-green {
+    background: #3a5;
+}
+
+.color-blue {
+    background: #48c;
+}
+
+.color-indigo {
+    background: #75c;
+}
+
+.color-violet {
+    background: #a5c;
+}
